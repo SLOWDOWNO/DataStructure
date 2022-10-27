@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-int main1()
+int dblinkedlist_test()
 {
 	dbLinkedList<int> dblink;
 	//inser test

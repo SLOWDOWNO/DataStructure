@@ -4,7 +4,7 @@
 #include "sglinkedlist.h"
 #include <iostream>
 using namespace std;
-int main()
+int sglinkedlist_test()
 {
     sgLinkedList<int> link;
     for (int i = 0; i < 10; i++)
