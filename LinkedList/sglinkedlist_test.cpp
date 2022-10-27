@@ -1,6 +1,5 @@
-//
+
 // Created by Alex Shi on 2022/10/24.
-//
 
 #include "sglinkedlist.h"
 #include <iostream>
@@ -10,7 +9,7 @@ int main()
     sgLinkedList<int> link;
     for (int i = 0; i < 10; i++)
     {
-        link.insertIndex(i, i);
+      link.insertIndex(i, i);
     }
     cout << link.getLength() << endl;
 

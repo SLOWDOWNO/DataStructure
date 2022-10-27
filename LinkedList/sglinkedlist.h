@@ -27,13 +27,8 @@ public:
     ~sgLinkedList();
     //
 public:
-    void printList();        //打印链表
     bool isEmpty();          //链表是否为空
-    int getLength();         //链表长度
-
-    //T getData(int index);    //根据索引获取数据
-    //T getHeadData();         //获取第一个节点的数据
-    //T getLastData();         //获取尾节点数据
+    int getLength();         //获取链表长度
 
     Node<T>* insertIndex(int index, T val);      //按索引插入节点
     Node<T>* insertHead(T val);       //头插法插入节点

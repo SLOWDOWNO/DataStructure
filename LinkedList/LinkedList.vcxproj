@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dblinkedlist.h" />
     <ClInclude Include="sglinkedlist.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dblinkedlist_test.cpp" />
     <ClCompile Include="sglinkedlist_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
