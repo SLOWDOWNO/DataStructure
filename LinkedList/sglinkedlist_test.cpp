@@ -3,8 +3,9 @@
 
 #include "sglinkedlist.h"
 #include <iostream>
+
 using namespace std;
-int sglinkedlist_test()
+int main()
 {
     sgLinkedList<int> link;
     for (int i = 0; i < 10; i++)
