@@ -1,5 +1,6 @@
 
 //Create by Alex Shi on 2022/10/28
+#pragma once
 
 # include "arraystack.h"
 # include <iostream>
