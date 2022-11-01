@@ -6,7 +6,7 @@
 # include <iostream>
 using namespace std;
 
-int main()
+int main2()
 {
 	ArrayStack<int> stack1(10);
 	for (int i = 0; i < 5; i++)

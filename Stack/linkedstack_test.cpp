@@ -6,11 +6,11 @@
 # include <string>
 using namespace std;
 
-int main2()
+int main()
 {
-	Linkedstack<string> fuck_stack;
-	fuck_stack.push("you");
-	fuck_stack.push("Fuck");
+	Linkedstack<int > fuck_stack;
+	fuck_stack.push(1);
+	fuck_stack.push(2);
 
 	cout << "栈的大小: " << fuck_stack.size() << endl;
 	cout << "栈顶元素: " << fuck_stack.getTop() << endl;

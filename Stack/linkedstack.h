@@ -83,7 +83,7 @@ T Linkedstack<T>::getTop()
 	}
 	else
 	{
-		return nullptr;
+		return 0;
 	}
 }
 
@@ -104,7 +104,7 @@ T Linkedstack<T>::pop()
 	if (phead->_next != nullptr)
 	{
 		Node<T>* pdel = phead->_next;
-		phead->_next = pdel->_next;
+		phead->_next = phead->_next->_next;
 		T value = pdel->_val;
 		delete pdel;
 		count--;
@@ -112,7 +112,7 @@ T Linkedstack<T>::pop()
 	}
 	else
 	{
-		return nullptr;
+		return 0;
 	}
 }
 
