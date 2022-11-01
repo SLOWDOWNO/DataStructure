@@ -8,7 +8,17 @@ using namespace std;
 
 int main()
 {
-	
-
-	return 0;
+    Circularqueue<string> fuck_queue(6);
+    fuck_queue.push("one");
+    fuck_queue.push("two");
+    fuck_queue.push("three");
+    fuck_queue.push("four");
+    fuck_queue.push("five");
+    cout << "队列长度" << fuck_queue.size() << endl;
+    while (!fuck_queue.isEmpty())
+    {
+        cout << fuck_queue.front() << endl;
+        fuck_queue.pop();
+    }
+    return 0;
 }

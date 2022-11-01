@@ -9,11 +9,10 @@
 template <typename T>
 class Circularqueue
 {
-private:
-	Circularqueue();
+public:
 	Circularqueue(int cpcity);
 	~Circularqueue();
-private:
+public:
 	bool isEmpty();							//队列判空
 	int size();								//队列大小
 	bool push(T value);						//入队
@@ -64,7 +63,7 @@ int Circularqueue<T>::size()
 template <typename T>
 bool Circularqueue<T>::push(T value)
 {
-	if ((end + 1) % begin == begin)
+	if ((end + 1) % capacity == begin)
 	{
 		return false;
 	}
@@ -82,7 +81,7 @@ bool Circularqueue<T>::pop()
 		return false;
 	}
 	begin = (begin + 1) % capacity;
-	return true
+	return true;
 }
 
 //返回队首元素
@@ -91,7 +90,7 @@ T Circularqueue<T>::front()
 {
 	if (this->isEmpty())
 	{
-		return false;
+		return 0;
 	}
 	return queue[begin];
 }
